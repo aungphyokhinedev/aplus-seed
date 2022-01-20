@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/aung/Projects/aplus-back-seed/aplus-back-seed.csproj": {}
+    "D:\\project\\aplus-seed\\aplus-back-seed.csproj": {}
   },
   "projects": {
-    "/home/aung/Projects/aplus-back-seed/aplus-back-seed.csproj": {
+    "D:\\project\\aplus-seed\\aplus-back-seed.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aung/Projects/aplus-back-seed/aplus-back-seed.csproj",
+        "projectUniqueName": "D:\\project\\aplus-seed\\aplus-back-seed.csproj",
         "projectName": "aplus-back-seed",
-        "projectPath": "/home/aung/Projects/aplus-back-seed/aplus-back-seed.csproj",
-        "packagesPath": "/home/aung/.nuget/packages/",
-        "outputPath": "/home/aung/Projects/aplus-back-seed/obj/",
+        "projectPath": "D:\\project\\aplus-seed\\aplus-back-seed.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\aplus-seed\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/aung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/152/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

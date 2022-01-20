@@ -12,7 +12,7 @@ public class SampleController : AplusBasedController
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    public SampleController(IAplusSample sample, ILogger<AplusBasedController> logger) : base(sample, logger)
+    public SampleController(IAplusSample sample, ILogger<AplusBasedController> logger, IAplusDataAccesses data) : base(sample, logger, data)
     {
     }
 
@@ -20,12 +20,6 @@ public class SampleController : AplusBasedController
     public IEnumerable<WeatherForecast> Get()
     {
         _sample.write("testing di");
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        return _data.getWeather();
     }
 }
