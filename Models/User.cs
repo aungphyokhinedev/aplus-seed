@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 namespace aplus_back_seed.Models
 {
-    public class UserContext : DbContext
+    public class AplusContext : DbContext
     {
         
-         public UserContext(DbContextOptions<UserContext> options) : base(options)  
+         public AplusContext(DbContextOptions<AplusContext> options) : base(options)  
         {  
             
         }  

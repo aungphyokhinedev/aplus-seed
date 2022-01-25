@@ -5,8 +5,8 @@ namespace aplus_back_seed.Common
 {
     public class AplusMockDataAccesses : IAplusDataAccesses
     {
-         private readonly UserContext _context; 
-         public AplusMockDataAccesses(UserContext context)  
+         private readonly AplusContext _context; 
+         public AplusMockDataAccesses(AplusContext context)  
         {  
             _context = context;  
         }  
@@ -37,7 +37,8 @@ namespace aplus_back_seed.Common
            return new AplusListData<User>{
                rows =_rows,
                page = 1,
-               total = _count
+               total = _count,
+               pageSize = 20
            };
         }
 

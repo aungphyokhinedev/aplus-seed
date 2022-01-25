@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 //... rest of the code omitted for brevity
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 //... rest of the code omitted for brevity
-builder.Services.AddDbContext<UserContext>(options =>
+builder.Services.AddDbContext<AplusContext>(options =>
             options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
