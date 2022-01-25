@@ -1,4 +1,5 @@
 using aplus_back_seed.Interfaces;
+using aplus_back_seed.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace aplus_back_seed.Controllers;
@@ -16,10 +17,10 @@ public class SampleController : AplusBasedController
     {
     }
 
-    [HttpGet(Name = "GetSample")]
-    public IEnumerable<WeatherForecast> Get()
+    
+    [HttpGet(Name = "GetUsers")]
+    public AplusListData<User> GetUsers()
     {
-        _sample.write("testing di");
-        return _data.getWeather();
+       return  _data.GetUsers();
     }
 }
