@@ -1,0 +1,8 @@
+POST https://localhost:7291/sample/newuser HTTP/1.1
+content-type: application/json
+Authorization: kasdljewrjwelkrje1498905klsjkfkl
+
+{
+    "UID": 1,
+    "Mobile_no": "95900495"
+}

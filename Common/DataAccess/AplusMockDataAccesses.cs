@@ -27,12 +27,13 @@ namespace aplus_back_seed.Common
        .ToArray();
         }
 
-        public AplusListData<User> GetUsers()
+        public AplusListData<User> GetUsers(AplusRequestListParams request)
         {
+           
             List<User> _rows = new List<User>();
            int _count =_context.users.Count();
            if(_count > 0)
-           _rows =  _context.users.OrderBy(u=>u.UID).Skip(0).Take(20).ToList();
+           _rows =  _context.users.OrderBy(u => "u." + request.orderBy).Skip((request.pageSize - 1) * request.pageSize).Take(request.pageSize).ToList();
            
            return new AplusListData<User>{
                rows =_rows,
