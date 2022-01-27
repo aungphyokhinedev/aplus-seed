@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pEr/N10vBDIXrKL4M2OUEAnogkq8BPfiJpQZhtpWGsDRsFQdiib6AUDDoGcTGEATx/bvwyBr+S4NDf5cEj7KWA==",
+  "dgSpecHash": "6I+jBPiTByMYGCozuL32RbiZOBZCm8xZ9zbUBItcqshkCflkLDrPZ99aysryTZIr0LhcWAi14UaAGfOYCAxMgQ==",
   "success": true,
   "projectFilePath": "D:\\project\\aplus-seed\\aplus-back-seed.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.linq.dynamic.core\\1.2.15\\system.linq.dynamic.core.1.2.15.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",

@@ -1,6 +1,6 @@
 using aplus_back_seed.Interfaces;
 using aplus_back_seed.Models;
-
+using System.Linq.Dynamic.Core;
 namespace aplus_back_seed.Common
 {
     public class AplusMockDataAccesses : IAplusDataAccesses
@@ -27,13 +27,13 @@ namespace aplus_back_seed.Common
        .ToArray();
         }
 
-        public AplusListData<User> GetUsers(AplusRequestListParams request)
+        public AplusListData<User> GetUsers(AplusRequestData request)
         {
            
             List<User> _rows = new List<User>();
            int _count =_context.users.Count();
            if(_count > 0)
-           _rows =  _context.users.OrderBy(u => "u." + request.orderBy).Skip((request.pageSize - 1) * request.pageSize).Take(request.pageSize).ToList();
+           _rows =  _context.users.Where(request.query).OrderBy(u => "u." + request.orderBy).Skip((request.pageSize - 1) * request.pageSize).Take(request.pageSize).ToList();
            
            return new AplusListData<User>{
                rows =_rows,

@@ -6,11 +6,13 @@ public class AplusListData<T>
         public List<T>? rows{get;set;}
     }
 
-public class AplusRequestListParams
+public  class AplusRequestData
     {
+        public string query {get;set;}
         public string orderBy { get; set; }
         public int page {get;set;}
         public int pageSize {get;set;}
+       
         
     }
 

@@ -22,7 +22,7 @@ public class SampleController : AplusBasedController
     [HttpGet(Name = "GetUsers")]
     public AplusListData<User> GetUsers()
     {
-       return  _data.GetUsers(new AplusRequestListParams{
+       return  _data.GetUsers(new AplusRequestData{
            page = 1, 
            pageSize = 20
        });
